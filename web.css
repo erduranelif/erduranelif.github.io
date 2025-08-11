@@ -1,0 +1,64 @@
+/* Genel reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sayfa tam ekran ve içeriği ortala */
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ana konteyner: ad soyad ve kutucukları içerir */
+.main-container {
+  text-align: center;
+}
+
+/* Ad Soyad */
+.main-container h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Kutucukların container'ı */
+.bilgi-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap; /* Küçük ekranlarda alt alta kayar */
+}
+
+/* Her kutucuk */
+.bilgi {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Hover efekti */
+.bilgi:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Kutucuk başlıkları */
+.bilgi h2 {
+  margin-bottom: 15px;
+  color: #6b5b95;
+}
+
+/* Kutucuk içeriği */
+.bilgi p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
